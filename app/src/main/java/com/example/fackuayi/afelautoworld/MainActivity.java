@@ -176,29 +176,25 @@ public class MainActivity extends AppCompatActivity {
         spin.setAdapter(aa);
 */
 
-
-
-
         //Getting the instance of Spinner and applying OnItemSelectedListener on it
         spin = (Spinner) findViewById(R.id.spinner);
         CustomAdapter customAdapter = new CustomAdapter(MainActivity.this, images, fruits);
         spin.setAdapter(customAdapter);
 
-
         spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView adapterView, View view, int i, long l) {
-//                if(adapterView.getItemAtPosition(i).equals("Apple")){
-//                    fruit = "Apple";
-//                }
+                if(CustomAdapter.getFruit(i).equals("Apple")){
+                    fruit = "Apple";
+                }
 
-//                if(adapterView.getItemAtPosition(i).toString().equals("Grapes")){
-//                    fruit = "Grapes";
-//                }
-//
-//                if (adapterView.getItemAtPosition(i).toString().equals("Banana")) {
-//                    fruit = "Banana";
-//                }
+                if(CustomAdapter.getFruit(i).equals("Grapes")){
+                    fruit = "Grapes";
+                }
+
+                if (CustomAdapter.getFruit(i).equals("Banana")) {
+                    fruit = "Banana";
+                }
 
             }
 

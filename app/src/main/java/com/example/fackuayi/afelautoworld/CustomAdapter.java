@@ -48,4 +48,8 @@ public class CustomAdapter extends BaseAdapter {
              names.setText(fruit[i]);
              return view;
     }
+
+    public static String getFruit(int i) {
+        return fruit[i];
+    }
 }
