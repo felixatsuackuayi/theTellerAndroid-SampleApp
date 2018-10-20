@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryColor"
+    android:background="@drawable/bgsplash"
     tools:context="com.example.fackuayi.afelautoworld.splash">
 
 
@@ -15,7 +15,7 @@
         android:id="@+id/imagesplash"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/telamart"
+        android:src="@drawable/dtel"
         android:layout_marginTop="100dp"
         android:layout_centerInParent="true"
 
@@ -24,7 +24,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to TelaMart Platform"
+        android:text="Welcome to theTeller SDK Test Platform"
         android:layout_below="@+id/imagesplash"
         android:layout_centerHorizontal="true"
         android:textSize="22sp"
